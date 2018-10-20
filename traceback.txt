@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 72, in script
+    $ adj = ui.adjustment(value = scrollValue, changed = storeScrollValue)
+  File "game/script.rpy", line 72, in <module>
+    $ adj = ui.adjustment(value = scrollValue, changed = storeScrollValue)
+NameError: name 'scrollValue' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 72, in script
+    $ adj = ui.adjustment(value = scrollValue, changed = storeScrollValue)
+  File "D:\renpy-7.1.1-sdk\renpy\ast.py", line 882, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\renpy-7.1.1-sdk\renpy\python.py", line 1913, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 72, in <module>
+    $ adj = ui.adjustment(value = scrollValue, changed = storeScrollValue)
+NameError: name 'scrollValue' is not defined
+
+Windows-8-6.2.9200
+Ren'Py 7.1.1.929
+Jing's Simplest Dating Sim Ever 1.0
+Sat Oct 20 16:06:13 2018
